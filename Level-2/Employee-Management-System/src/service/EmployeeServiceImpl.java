@@ -20,7 +20,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void viewAllEmployees() {
         if (employees.isEmpty()) {
-            System.err.println("No employees found!");
+            System.out.println("No employees found!");
             return;
         }
 
@@ -32,7 +32,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void viewEmployeeById(Integer id) {
         if (employees.isEmpty()) {
-            System.err.println("No employees found!");
+            System.out.println("No employees found!");
+            return;
         }
 
         for (Employee employee : employees) {
@@ -48,7 +49,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void updateEmployee(Employee updatedEmployee, Integer id) {
         if (employees.isEmpty()) {
-            System.err.println("No employees found!");
+            System.out.println("No employees found!");
+            return;
         }
 
         if (Objects.isNull(updatedEmployee)) {
