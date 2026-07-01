@@ -11,6 +11,7 @@ public class Calculator {
 
     }
 
+
     public void setFirstNumber(double firstNumber) {
         this.firstNumber = firstNumber;
     }
