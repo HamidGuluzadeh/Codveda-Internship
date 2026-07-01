@@ -1,16 +1,16 @@
 package entity;
 
 public class Employee {
-    private int id;
+    private Integer id;
     private String firstName;
     private String lastName;
-    private int age;
+    private Integer age;
     private String phoneNumber;
     private String position;
-    private double salary;
+    private Double salary;
 
-    public Employee(int id, String firstName, String lastName, int age,
-                    String phoneNumber, String position,double salary) {
+    public Employee(Integer id, String firstName, String lastName, Integer age,
+                    String phoneNumber, String position,Double salary) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -25,11 +25,11 @@ public class Employee {
     }
 
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public int getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -49,11 +49,11 @@ public class Employee {
         return this.lastName;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return this.age;
     }
 
@@ -73,11 +73,11 @@ public class Employee {
         return this.position;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(Double salary) {
         this.salary = salary;
     }
 
-    public double getSalary() {
+    public Double getSalary() {
         return this.salary;
     }
 
